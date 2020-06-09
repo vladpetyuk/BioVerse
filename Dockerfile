@@ -34,7 +34,7 @@ RUN apt-get update \
   && install2.r -r http://rforge.net PKI \
   ## And some nice R packages for publishing-related stuff
   && install2.r --error --deps TRUE \
-    bookdown rticles rmdshower
+    bookdown rticles
 
 
 
