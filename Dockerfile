@@ -3,12 +3,12 @@
 FROM rocker/verse:latest
 
 
-# # this part from old verse image (3.3.2)
-# # aparently it contained some LaTeX related packages that went missing in later versions
-# RUN apt-get update \
-#   && apt-get install -y --no-install-recommends \
-#     ## for building pdfs via pandoc/LaTeX (These are large!)
-#     lmodern \
+# this part from old verse image (3.3.2)
+# aparently it contained some LaTeX related packages that went missing in later versions
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
+    ## for building pdfs via pandoc/LaTeX (These are large!)
+    lmodern
 #     texlive-fonts-recommended \
 #     texlive-generic-recommended \
 #     texlive-humanities \
