@@ -9,8 +9,8 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     ## for building pdfs via pandoc/LaTeX (These are large!)
     lmodern \
-    texlive-fonts-recommended
-#     texlive-generic-recommended \
+    texlive-fonts-recommended \
+    texlive-generic-recommended
 #     texlive-humanities \
 #     texlive-latex-extra \
 #     texlive-science \
