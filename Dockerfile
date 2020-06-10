@@ -14,15 +14,15 @@ RUN apt-get update \
     texlive-humanities \
     texlive-latex-extra \
     texlive-science \
-    texinfo \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/ \
-  && cd /usr/share/texlive/texmf-dist/tex/latex \
-  ## additional tex files needed for certain rticles templates
-  && wget http://mirrors.ctan.org/macros/latex/contrib/ametsoc.zip \
-  && unzip ametsoc.zip \
-  && rm *.zip # \
-## R manuals use inconsolata font, but texlive-fonts-extra is huge, so:
+    texinfo # \
+#  && apt-get clean \
+#  && rm -rf /var/lib/apt/lists/ \
+#  && cd /usr/share/texlive/texmf-dist/tex/latex \
+#  ## additional tex files needed for certain rticles templates
+#  && wget http://mirrors.ctan.org/macros/latex/contrib/ametsoc.zip \
+#  && unzip ametsoc.zip \
+#  && rm *.zip \
+# ## R manuals use inconsolata font, but texlive-fonts-extra is huge, so:
 #  && cd /usr/share/texlive/texmf-dist \
 #  && wget http://mirrors.ctan.org/install/fonts/inconsolata.tds.zip \
 #  && unzip inconsolata.tds.zip \
